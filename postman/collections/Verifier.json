@@ -1,0 +1,1248 @@
+{
+	"info": {
+		"_postman_id": "9f763848-cdbc-4d67-a50b-487fe35a5e63",
+		"name": "Verifier",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "25620819-9f763848-cdbc-4d67-a50b-487fe35a5e63"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"id": "9bb5f0ca-2314-4b34-a933-570dc2bf9ba8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"{{userNameVerifierAdmin}}\",\n  \"password\": \"{{passwordVerifierAdmin}}\",\n  \"rememberMe\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}api/authenticate",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"authenticate"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "4fd26e48-70aa-411c-9765-f6bea561c357",
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl9hdXRvbWF0aW9uIiwiZXhwIjoxNzExNDYxMjM0LCJhdXRoIjoiUk9MRV9BRE1JTiIsImlhdCI6MTcxMTM3NDgzNH0.WMcdlnEvpfkUvIssF91hbD5oKlU5zQXhp9PMjMObXdUL2iqYJmOkvBtmkXC2WXKpiYjOOf97xPsqnLdkBpPBvw",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"{{userNameVerifierAdmin}}\",\n  \"password\": \"{{passwordVerifierAdmin}}\",\n  \"rememberMe\": true\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/authenticate",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"authenticate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1711540344&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=TcWzH9LdkwQ5vlhgZnZajkNXdomfVB%2Fy3amBvB8I2rA%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1711540344&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=TcWzH9LdkwQ5vlhgZnZajkNXdomfVB%2Fy3amBvB8I2rA%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 27 Mar 2024 11:52:24 GMT"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl9hdXRvbWF0aW9uIiwiZXhwIjoxNzE0MTMyMzQ0LCJhdXRoIjoiUk9MRV9BRE1JTiIsImlhdCI6MTcxMTU0MDM0NH0.k01rw4gxfmBr8bBhrwDQpy363KFCXnawVLtPoYk-AyDsxYOqxIAYdB2SvD-IcLrtcZ4vqmsWrbMA8gHr5EV0qA"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						},
+						{
+							"key": "Permissions-Policy",
+							"value": "camera=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), sync-xhr=()"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id_token\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl9hdXRvbWF0aW9uIiwiZXhwIjoxNzE0MTMyMzQ0LCJhdXRoIjoiUk9MRV9BRE1JTiIsImlhdCI6MTcxMTU0MDM0NH0.k01rw4gxfmBr8bBhrwDQpy363KFCXnawVLtPoYk-AyDsxYOqxIAYdB2SvD-IcLrtcZ4vqmsWrbMA8gHr5EV0qA\"\n}"
+				},
+				{
+					"id": "7e3e8c32-7983-420d-b9b5-2b8e9a4ddc5c",
+					"name": "LoginSuc",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"{{userNameVerifierAdmin}}\",\n  \"password\": \"{{passwordVerifierAdmin}}\",\n  \"rememberMe\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/authenticate",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"authenticate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1711663131&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=CAA0mAPTpFN4wn3yOKuy0S4ZMmEZPMdzpMt2F8Oct0Q%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1711663131&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=CAA0mAPTpFN4wn3yOKuy0S4ZMmEZPMdzpMt2F8Oct0Q%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Mar 2024 21:58:51 GMT"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl9hdXRvbWF0aW9uIiwiZXhwIjoxNzE0MjU1MTMxLCJhdXRoIjoiUk9MRV9BRE1JTiIsImlhdCI6MTcxMTY2MzEzMX0.rDMXAd8xO73o22RrZbTholKA-s6assbTf2QV7GCrqMnjnHpbw1zMMJI9JEMRdrvmr0uPvUxf8-psXdEP75ckFQ"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						},
+						{
+							"key": "Permissions-Policy",
+							"value": "camera=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), sync-xhr=()"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id_token\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl9hdXRvbWF0aW9uIiwiZXhwIjoxNzE0MjU1MTMxLCJhdXRoIjoiUk9MRV9BRE1JTiIsImlhdCI6MTcxMTY2MzEzMX0.rDMXAd8xO73o22RrZbTholKA-s6assbTf2QV7GCrqMnjnHpbw1zMMJI9JEMRdrvmr0uPvUxf8-psXdEP75ckFQ\"\n}"
+				},
+				{
+					"id": "663b8bd4-d849-4ede-a452-91d715d42f4f",
+					"name": "LoginSuc",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"{{userNameVerifierAdmin}}\",\n  \"password\": \"{{passwordVerifierAdmin}}\",\n  \"rememberMe\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/authenticate",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"authenticate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1711663154&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=ExHSylV3Ts%2BoBqurjo5%2F24uEGS6wuzaKWACDBQvB98A%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1711663154&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=ExHSylV3Ts%2BoBqurjo5%2F24uEGS6wuzaKWACDBQvB98A%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Mar 2024 21:59:14 GMT"
+						},
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl9hdXRvbWF0aW9uIiwiZXhwIjoxNzE0MjU1MTU0LCJhdXRoIjoiUk9MRV9BRE1JTiIsImlhdCI6MTcxMTY2MzE1NH0.HXoA4HMVLAvfaVKg0N0kOzBiNTiouwLuF3pmTWrlBR2OtWp9F6xwSt_LwMR5H3I2AYy5H3_IcAee_8qlR7NXVA"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						},
+						{
+							"key": "Permissions-Policy",
+							"value": "camera=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), sync-xhr=()"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id_token\": \"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl9hdXRvbWF0aW9uIiwiZXhwIjoxNzE0MjU1MTU0LCJhdXRoIjoiUk9MRV9BRE1JTiIsImlhdCI6MTcxMTY2MzE1NH0.HXoA4HMVLAvfaVKg0N0kOzBiNTiouwLuF3pmTWrlBR2OtWp9F6xwSt_LwMR5H3I2AYy5H3_IcAee_8qlR7NXVA\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f9abff1f-769c-4e5f-9ae4-bb554fc44bf8",
+						"exec": [
+							"let jsonData = pm.response.json();",
+							"pm.environment.set('task_id', jsonData.id);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "470a76f8-74a9-4043-9b99-2d8ab13f0628",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl9hdXRvbWF0aW9uIiwiZXhwIjoxNzEyMjYzMTk0LCJhdXRoIjoiUk9MRV9BRE1JTiIsImlhdCI6MTcxMjE3Njc5NH0.JnY5joSue75MzViWS-zS17OqxGIb0BrLXnJgdpTZcRQNQ9cv3zw2lp6bU_ktIBsaMdBTqSrnyPmj1iwKINuZ8A"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n   \"text\": \"swaggerTaskCheck\",\n  \"answer\": \"string\",\n  \"title\": \"string\"\n}"
+				},
+				"url": {
+					"raw": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+					"protocol": "https",
+					"host": [
+						"sqlverifier-live-6e21ca0ed768",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"tasks"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "65",
+							"disabled": true
+						},
+						{
+							"key": "size",
+							"value": "20",
+							"disabled": true
+						},
+						{
+							"key": "sort",
+							"value": "id,asc",
+							"disabled": true
+						},
+						{
+							"key": "cacheBuster",
+							"value": "1711562121077",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "0c6d04ee-f292-4f08-90cd-6b91c716037e",
+					"name": "Create task",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbl9hdXRvbWF0aW9uIiwiZXhwIjoxNzEyMjYzMTk0LCJhdXRoIjoiUk9MRV9BRE1JTiIsImlhdCI6MTcxMjE3Njc5NH0.JnY5joSue75MzViWS-zS17OqxGIb0BrLXnJgdpTZcRQNQ9cv3zw2lp6bU_ktIBsaMdBTqSrnyPmj1iwKINuZ8A"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n   \"text\": \"swaggerTaskCheck\",\n  \"answer\": \"string\",\n  \"title\": \"string\"\n}"
+						},
+						"url": {
+							"raw": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+							"protocol": "https",
+							"host": [
+								"sqlverifier-live-6e21ca0ed768",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"tasks"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "65",
+									"disabled": true
+								},
+								{
+									"key": "size",
+									"value": "20",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "id,asc",
+									"disabled": true
+								},
+								{
+									"key": "cacheBuster",
+									"value": "1711562121077",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1712176975&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=dITHgAj21wBGNQ9wTfFJgqPIpnKy2ypUVZxYHy4ES%2F4%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1712176975&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=dITHgAj21wBGNQ9wTfFJgqPIpnKy2ypUVZxYHy4ES%2F4%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Location",
+							"value": "/api/tasks/72508"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 03 Apr 2024 20:42:55 GMT"
+						},
+						{
+							"key": "X-Sqlverifierapp-Params",
+							"value": "72508"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Sqlverifierapp-Alert",
+							"value": "sqlverifierApp.task.created"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Permissions-Policy",
+							"value": "camera=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), sync-xhr=()"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 72508,\n    \"text\": \"swaggerTaskCheck\",\n    \"answer\": \"string\",\n    \"title\": \"string\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get task data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9a29d92c-fe60-40bf-b528-51cc686f7ccd",
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "f098cfb0-b498-41a7-be43-2cbbd58e1e35",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{verifierAdminToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}api/tasks/{{task_id}}",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"tasks",
+						"{{task_id}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "51295dbd-f2dc-47f4-b153-a80d1a8fb69e",
+					"name": "Get task data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/tasks/{{task_id}}",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"tasks",
+								"{{task_id}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1712176981&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=QgtcjElxdrmvASFjoPxnKGVpN0EWLJnl5CCMSKVHdYk%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1712176981&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=QgtcjElxdrmvASFjoPxnKGVpN0EWLJnl5CCMSKVHdYk%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 03 Apr 2024 20:43:01 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						},
+						{
+							"key": "Permissions-Policy",
+							"value": "camera=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), sync-xhr=()"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 72508,\n    \"text\": \"swaggerTaskCheck\",\n    \"answer\": \"string\",\n    \"title\": \"string\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1b2d34f3-8d3a-4e04-87d1-d3df44af218c",
+						"exec": [
+							" "
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "2977f671-8e26-450c-8c6c-ece5b2038aa9",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{verifierAdminToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": {{task_id}},\n  \"text\": \"updatedTextfromPostman\",\n  \"answer\": \"TEXTabv\",\n  \"title\": \"TEXTabv\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}api/tasks/{{task_id}}",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"tasks",
+						"{{task_id}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "6f340e0b-1b87-4535-8607-40d78c17723f",
+					"name": "Update task",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": {{task_id}},\n  \"text\": \"updatedTextfromPostman\",\n  \"answer\": \"TEXTabv\",\n  \"title\": \"TEXTabv\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/tasks/{{task_id}}",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"tasks",
+								"{{task_id}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1712176987&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=qGUcnN7LyGbm%2B6a4HF17AuQ6F2JVM96K2h3vHbGA%2F20%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1712176987&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=qGUcnN7LyGbm%2B6a4HF17AuQ6F2JVM96K2h3vHbGA%2F20%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 03 Apr 2024 20:43:07 GMT"
+						},
+						{
+							"key": "X-Sqlverifierapp-Params",
+							"value": "72508"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Sqlverifierapp-Alert",
+							"value": "sqlverifierApp.task.updated"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Permissions-Policy",
+							"value": "camera=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), sync-xhr=()"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 72508,\n    \"text\": \"updatedTextfromPostman\",\n    \"answer\": \"TEXTabv\",\n    \"title\": \"TEXTabv\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete task",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1b9a8556-1572-405d-b8b7-d1631b440fc0",
+						"exec": [
+							" "
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "af9719fe-b36d-4883-824b-4a1d9c4b8495",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{verifierAdminToken}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": {{task_id}},\n ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}api/tasks/{{task_id}}",
+					"host": [
+						"{{baseUrl}}api"
+					],
+					"path": [
+						"tasks",
+						"{{task_id}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "54609861-0fc8-44a1-b46c-cdf1f366dbdd",
+					"name": "Delete task",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": {{task_id}},\n ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}api/tasks/{{task_id}}",
+							"host": [
+								"{{baseUrl}}api"
+							],
+							"path": [
+								"tasks",
+								"{{task_id}}"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Cowboy"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1712176992&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=byGuroV%2F2vpcyLEOohYRHaaQPFv93XcNkD5%2BYQUK8c4%3D\"}]}"
+						},
+						{
+							"key": "Reporting-Endpoints",
+							"value": "heroku-nel=https://nel.heroku.com/reports?ts=1712176992&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=byGuroV%2F2vpcyLEOohYRHaaQPFv93XcNkD5%2BYQUK8c4%3D"
+						},
+						{
+							"key": "Nel",
+							"value": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "X-Xss-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self'; frame-src 'self' data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://storage.googleapis.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; img-src 'self' data:; font-src 'self' https://fonts.gstatic.com data:"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 03 Apr 2024 20:43:12 GMT"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "X-Sqlverifierapp-Params",
+							"value": "72508"
+						},
+						{
+							"key": "X-Sqlverifierapp-Alert",
+							"value": "sqlverifierApp.task.deleted"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000 ; includeSubDomains"
+						},
+						{
+							"key": "Permissions-Policy",
+							"value": "camera=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), sync-xhr=()"
+						},
+						{
+							"key": "Via",
+							"value": "1.1 vegur"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{adminToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "8d87aa5a-dbf8-400b-9d17-869c2b790400",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "5e1b7ba3-7d2c-4149-99dd-f210617902ef",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
